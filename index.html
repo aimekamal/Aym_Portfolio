@@ -6,11 +6,11 @@
 <title>Aym Souidan — Computer Engineer · Software · AI & Data</title>
 <meta name="description" content="Portfolio of Aym Souidan, computer engineer in Al Khobar working across software development, machine learning, and data.">
 <meta property="og:title" content="Aym Souidan — Computer Engineer">
-<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta property="og:description" content="Software, AI, and data. An interactive engineering workspace.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500&display=swap">
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <!-- NAVIGATION -->
@@ -20,7 +20,7 @@
 <button id="lang" aria-label="Switch language">عربي</button>
 </nav>
 
-<!-- HERO (canvas network is drawn by js/hero-network.js) -->
+<!-- HERO (canvas network is drawn by hero-network.js) -->
 <header class="hero" id="top">
 <canvas id="net" aria-hidden="true"></canvas>
 <div class="mono" id="xy" aria-hidden="true">x:000 y:000</div>
@@ -35,7 +35,7 @@
 </header>
 
 <main>
-<!-- PROJECTS — to add a project: copy one <article class="p">, change data-i, add p4t/p4c/p4s to js/translations.js -->
+<!-- PROJECTS — to add a project: copy one <article class="p">, change data-i, add p4t/p4c/p4s to translations.js -->
 <section id="work"><div class="wrap">
 <div class="sh"><h2 data-i18n="h2w">Selected projects</h2><span class="mono" data-i18n="hint">Select a project to preview</span></div>
 <!-- Add future fields (data-href, descriptions) to each article. Visuals are inline SVG. -->
@@ -67,20 +67,20 @@
 <text x="270" y="154" text-anchor="middle">AI</text><text x="330" y="84" text-anchor="middle">API</text><text x="340" y="154" text-anchor="middle">DB</text><text x="330" y="229" text-anchor="middle">…</text></svg></div></article>
 </div></section>
 
-<!-- SKILLS (built by js/skills.js from js/config.js) -->
+<!-- SKILLS (built by skills.js from config.js) -->
 <section id="skills"><div class="wrap">
 <div class="sh"><h2 data-i18n="h2s">Technical constellation</h2><span class="mono" data-i18n="skh"></span></div>
 <div class="sk"><svg id="map" role="group" aria-label="Skills map"></svg><div id="pn" aria-live="polite"></div></div>
 </div></section>
 
-<!-- ABOUT (texts in js/translations.js) -->
+<!-- ABOUT (texts in translations.js) -->
 <section id="about"><div class="wrap ab">
 <h2 class="rv" data-i18n="h2a"></h2>
 <div class="tx rv"><p data-i18n="a1"></p><p data-i18n="a2"></p></div>
 <div class="facts mono rv"><div><span class="mono" data-i18n="k1"></span><span data-i18n="v1"></span></div><div><span class="mono" data-i18n="k2"></span><span data-i18n="v2"></span></div><div><span class="mono" data-i18n="k3"></span><span data-i18n="v3"></span></div></div>
 </div></section>
 
-<!-- CONTACT (links come from js/config.js) -->
+<!-- CONTACT (links come from config.js) -->
 <section id="contact" class="ct"><div class="wrap">
 <p class="mono"><i class="dot"></i><span data-i18n="cx">CONNECTION OPEN</span></p>
 <h2 class="rv" data-i18n="h2c"></h2>
@@ -95,12 +95,12 @@
 <!-- PROJECT PREVIEW OVERLAY -->
 <dialog id="ov" aria-labelledby="ot"><div class="hd"><div><h3 id="ot"></h3><span class="mono" id="oc"></span></div><button id="x" data-i18n="cl">Close</button></div><div class="vz" id="os"></div><p class="mono" style="margin-top:1rem" data-i18n="soon">Details coming soon</p></dialog>
 
-<script src="js/config.js" defer></script>
-<script src="js/translations.js" defer></script>
-<script src="js/main.js" defer></script>
-<script src="js/hero-network.js" defer></script>
-<script src="js/skills.js" defer></script>
-<script src="js/projects.js" defer></script>
-<script src="js/init.js" defer></script>
+<script src="config.js" defer></script>
+<script src="translations.js" defer></script>
+<script src="main.js" defer></script>
+<script src="hero-network.js" defer></script>
+<script src="skills.js" defer></script>
+<script src="projects.js" defer></script>
+<script src="init.js" defer></script>
 </body>
 </html>
