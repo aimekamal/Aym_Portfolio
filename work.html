@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Selected Work — Aym Souidan</title>
+  <meta name="description" content="Selected projects by Aym Souidan across machine learning, software, data analysis, networking, and embedded systems.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Same fonts as the home page -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500&display=swap">
+
+  <!-- styles.css = shared design, work.css = Work page only (keep this order) -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="work.css">
+</head>
+
+<body>
+
+  <!-- SCROLL PROGRESS LINE (filled by work.js) -->
+  <div class="scroll-progress" aria-hidden="true">
+    <span id="scroll-progress-bar"></span>
+  </div>
+
+  <!-- NAVIGATION: same look as the home page -->
+  <nav aria-label="Main">
+    <a class="logo" href="index.html" aria-label="Aym Souidan — home">
+      <svg class="mk" viewBox="0 0 64 58" aria-hidden="true">
+        <path class="ml" d="M4 52L19 10 34 52H60V31H38V10H60" />
+        <circle cx="19" cy="10" r="3.2" />
+        <circle cx="34" cy="52" r="3.2" />
+        <circle cx="60" cy="10" r="3.2" />
+      </svg>
+      <span class="wm">AYM <span>SOUIDAN</span></span>
+    </a>
+
+    <ul class="mono">
+      <li><a href="work.html" aria-current="page">Work</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+
+    <a class="nav-back mono" href="index.html">← Home</a>
+  </nav>
+
+  <main class="work-page">
+
+    <!-- INTRO -->
+    <header class="work-intro wrap">
+      <p class="mono"><i class="dot"></i>WORK · ARCHIVE</p>
+      <h1 class="work-title">Selected <em>work</em>.</h1>
+      <div class="work-intro-bottom">
+        <p class="work-subtitle">
+          Projects across machine learning, software, data analysis, networking, and embedded systems.
+        </p>
+        <!-- Updated by work.js, e.g. "Showing 4 of 9 · AI & Machine Learning" -->
+        <p class="mono" id="work-readout" aria-live="polite"></p>
+      </div>
+    </header>
+
+    <!-- CATEGORY FILTERS (buttons are created by work.js from work-data.js) -->
+    <section class="work-controls wrap" aria-label="Filter projects">
+      <div class="filter-bar" id="filter-bar" role="group" aria-label="Project categories"></div>
+    </section>
+
+    <!-- PROJECT LIST (rows are created by work.js from work-data.js) -->
+    <section class="wrap" aria-label="Projects">
+      <ol class="work-list" id="work-list"></ol>
+      <noscript><p class="mono">Please enable JavaScript to see the project list.</p></noscript>
+    </section>
+
+    <!-- BOTTOM LINKS -->
+    <section class="work-end wrap">
+      <p class="mono">Detailed project pages are coming soon.</p>
+      <a class="btn" href="index.html">Back to home</a>
+      <a class="btn pri" href="index.html#contact">Get in touch</a>
+    </section>
+
+  </main>
+
+  <!-- FOOTER: same as the home page -->
+  <footer>
+    <div class="wrap mono">
+      <a class="logo" href="index.html" aria-label="Aym Souidan — home">
+        <svg class="mk" viewBox="0 0 64 58" aria-hidden="true">
+          <path class="ml" d="M4 52L19 10 34 52H60V31H38V10H60" />
+          <circle cx="19" cy="10" r="3.2" />
+          <circle cx="34" cy="52" r="3.2" />
+          <circle cx="60" cy="10" r="3.2" />
+        </svg>
+        <span class="wm">AYM <span>SOUIDAN</span></span>
+      </a>
+      <span>© 2026</span>
+      <span>Al Khobar, SA</span>
+    </div>
+  </footer>
+
+  <!-- Scripts: data first, then the page logic -->
+  <script src="work-data.js" defer></script>
+  <script src="work.js" defer></script>
+</body>
+</html>

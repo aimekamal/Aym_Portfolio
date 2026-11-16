@@ -1,0 +1,417 @@
+/* =========================================================
+   work.css — styles for work.html only
+   Colors, fonts, nav, logo, buttons and footer come from styles.css,
+   so this file only adds what is specific to the Work page.
+   Sections:
+   1. Page            6. Featured row + graphic
+   2. Progress bar    7. Bottom links
+   3. Nav extras      8. Animations
+   4. Intro           9. Small screens
+   5. Filters + list
+   ========================================================= */
+
+
+/* ---------- 1. PAGE ---------- */
+.work-page {
+  padding-top: 8rem;               /* space under the fixed nav */
+  animation: workPageIn 0.6s ease both;
+}
+
+/* styles.css gives every <section> big padding; cancel it here */
+.work-page section {
+  padding: 0;
+}
+
+
+/* ---------- 2. SCROLL PROGRESS BAR ---------- */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  z-index: 30;
+  pointer-events: none;
+}
+
+.scroll-progress span {
+  display: block;
+  height: 100%;
+  background: var(--lilac);
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+
+/* ---------- 3. NAV EXTRAS ---------- */
+nav a[aria-current="page"] {
+  color: var(--lilac);             /* marks the page you are on */
+}
+
+.nav-back {
+  border: 1px solid var(--line);
+  padding: 0.3rem 0.8rem;
+}
+
+.nav-back:hover {
+  border-color: var(--lilac);
+  color: var(--lilac);
+}
+
+
+/* ---------- 4. INTRO ---------- */
+.work-intro {
+  padding-bottom: 2.5rem;
+}
+
+.work-title {
+  font-size: clamp(3rem, 9vw, 7rem);
+  max-width: none;
+  margin: 1rem 0 1.5rem;
+}
+
+.work-intro-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem 3rem;
+}
+
+.work-subtitle {
+  max-width: 50ch;
+  color: var(--mute);
+}
+
+
+/* ---------- 5. FILTERS + PROJECT LIST ---------- */
+.work-controls {
+  padding-bottom: 1.5rem;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.filter-chip {
+  background: none;
+  border: 1px solid var(--line);
+  color: var(--mute);
+  padding: 0.5rem 0.9rem;
+  font: 400 0.78rem var(--mono);
+  cursor: pointer;
+  transition: background 0.25s, color 0.25s, border-color 0.25s;
+}
+
+.filter-chip:hover {
+  border-color: var(--lilac);
+  color: var(--ink);
+}
+
+.filter-chip[aria-pressed="true"] {     /* the selected filter */
+  background: var(--lilac);
+  border-color: var(--lilac);
+  color: var(--on-lilac);
+}
+
+.filter-count {
+  margin-inline-start: 0.5rem;
+  opacity: 0.7;
+}
+
+.work-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 5rem;
+}
+
+.work-row {
+  border-top: 1px solid var(--line);
+  transition: opacity 0.3s;
+  animation: workRowIn 0.6s ease var(--row-delay) backwards;
+}
+
+.work-row:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+/* The clickable part of a row (a link or a button) */
+.work-link {
+  position: relative;
+  display: grid;
+  grid-template-columns: 4.5rem 1fr 15rem 2.5rem;   /* number | text | category | arrow */
+  gap: 1rem 1.5rem;
+  align-items: start;
+  width: 100%;
+  padding: 2rem 0.5rem;
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Lilac line that draws across the top on hover */
+.work-link::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--lilac);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.45s ease;
+}
+
+.work-link:hover::before,
+.work-link:focus-visible::before {
+  transform: scaleX(1);
+}
+
+.work-link:hover,
+.work-link:focus-visible {
+  background: color-mix(in srgb, var(--lilac) 8%, transparent);
+}
+
+.work-number {
+  padding-top: 0.5rem;
+  font: 400 0.9rem var(--mono);
+  color: var(--mute);
+  transition: color 0.3s;
+}
+
+.work-main {
+  display: block;
+}
+
+.work-title-text {
+  display: block;
+  font: 400 clamp(1.5rem, 3.2vw, 2.6rem) / 1.12 var(--serif);
+  letter-spacing: -0.015em;
+  transition: color 0.3s, transform 0.35s;
+}
+
+.work-description {
+  display: block;
+  max-width: 56ch;
+  margin-top: 0.6rem;
+  color: var(--mute);
+  font-size: 0.98rem;
+}
+
+.work-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding-top: 0.6rem;
+  font: 400 0.74rem / 1.4 var(--mono);
+  letter-spacing: 0.06em;
+}
+
+.work-category {
+  color: var(--lilac);
+}
+
+.work-kind {
+  color: var(--mute);
+}
+
+.work-arrow {
+  padding-top: 0.4rem;
+  font-size: 1.4rem;
+  color: var(--mute);
+  text-align: end;
+  transition: color 0.3s, transform 0.35s;
+}
+
+/* Hover and keyboard focus */
+.work-link:hover .work-number,
+.work-link:focus-visible .work-number,
+.work-link:hover .work-arrow,
+.work-link:focus-visible .work-arrow,
+.work-link:hover .work-title-text,
+.work-link:focus-visible .work-title-text {
+  color: var(--lilac);
+}
+
+.work-link:hover .work-title-text,
+.work-link:focus-visible .work-title-text {
+  transform: translateX(12px);
+}
+
+.work-link:hover .work-arrow,
+.work-link:focus-visible .work-arrow {
+  transform: translateX(6px);
+}
+
+/* Open "coming soon" note: the + turns into a x */
+.work-link[aria-expanded="true"] .work-arrow {
+  transform: rotate(45deg);
+  color: var(--lilac);
+}
+
+.work-note {
+  margin: 0;
+  padding: 0 0.5rem 1.5rem 6rem;
+}
+
+/* On mouse devices, dim the other rows while one is hovered */
+@media (hover: hover) {
+  .work-list:hover .work-row:not(:hover) {
+    opacity: 0.5;
+  }
+}
+
+
+/* ---------- 6. FEATURED ROW + GRAPHIC ---------- */
+.is-featured .work-title-text {
+  font-size: clamp(2.4rem, 6vw, 4.8rem);
+}
+
+.work-featured-tag {
+  display: block;
+  margin-bottom: 0.8rem;
+  font: 400 0.74rem var(--mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--lilac);
+}
+
+.work-subtitle-text {
+  display: block;
+  margin-top: 0.5rem;
+  font: italic 400 1.15rem var(--serif);
+  color: var(--lilac);
+}
+
+.work-visual {
+  display: block;
+  max-width: 620px;
+  margin-top: 1.8rem;
+  border: 1px solid var(--line);
+  background: var(--bg2);
+}
+
+.work-visual svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.sv-links line {
+  stroke: var(--lilac-deep);
+  opacity: 0.5;
+}
+
+.sv-sensor {
+  fill: var(--lilac);
+  animation: pulse 2.4s infinite;                 /* "pulse" is defined in styles.css */
+  animation-delay: calc(var(--i) * 0.3s);
+}
+
+.sv-hub {
+  fill: var(--bg2);
+  stroke: var(--lilac);
+  stroke-width: 2;
+}
+
+.sv-flow {
+  fill: none;
+  stroke: var(--lilac);
+  stroke-dasharray: 4 6;
+}
+
+.work-link:hover .sv-flow {
+  animation: dash 1s linear infinite;             /* "dash" is defined in styles.css */
+}
+
+.sv-box {
+  fill: none;
+  stroke: var(--lilac);
+}
+
+.sv-letter {
+  fill: var(--lilac);
+  font: 28px var(--serif);
+}
+
+.sv-wave {
+  fill: none;
+  stroke: var(--lilac-deep);
+  stroke-width: 2;
+}
+
+
+/* ---------- 7. BOTTOM LINKS ---------- */
+.work-end {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+  padding-bottom: 6rem;
+}
+
+.work-end p {
+  margin-inline-end: auto;
+}
+
+
+/* ---------- 8. ANIMATIONS ---------- */
+@keyframes workPageIn {
+  from { opacity: 0; }
+}
+
+@keyframes workRowIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+}
+
+
+/* ---------- 9. SMALL SCREENS ---------- */
+@media (max-width: 820px) {
+  .work-page {
+    padding-top: 6.5rem;
+  }
+
+  .work-link {
+    grid-template-columns: 2.5rem 1fr 1.5rem;     /* number | text | arrow */
+    padding: 1.5rem 0;
+  }
+
+  .work-meta {
+    grid-column: 2;                               /* category drops under the text */
+    grid-row: 2;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.3rem 1rem;
+    padding-top: 0;
+  }
+
+  .work-arrow {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .work-note {
+    padding-left: 2.5rem;
+  }
+
+  /* Filters become a single swipeable row */
+  .filter-bar {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+  }
+
+  .filter-chip {
+    flex: none;
+  }
+}
