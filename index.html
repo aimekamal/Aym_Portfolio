@@ -1,106 +1,541 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Aym Souidan — Computer Engineer · Software · AI & Data</title>
-<meta name="description" content="Portfolio of Aym Souidan, computer engineer in Al Khobar working across software development, machine learning, and data.">
-<meta property="og:title" content="Aym Souidan — Computer Engineer">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-<meta property="og:description" content="Software, AI, and data. An interactive engineering workspace.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500&display=swap">
-<link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>Aym Souidan — Computer Engineer · Software · AI & Data</title>
+
+    <meta
+        name="description"
+        content="Portfolio of Aym Souidan, computer engineer in Al Khobar working across software development, machine learning, and data."
+    >
+
+    <meta property="og:title" content="Aym Souidan — Computer Engineer">
+    <meta property="og:description" content="Software, AI, and data. An interactive engineering workspace.">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500&display=swap"
+    >
+
+    <link rel="stylesheet" href="styles.css">
 </head>
+
+
 <body>
-<!-- NAVIGATION -->
-<nav aria-label="Main">
-<a class="logo" href="#top" aria-label="Aym Souidan — home"><svg class="mk" viewBox="0 0 64 58" aria-hidden="true"><path class="ml" d="M4 52L19 10 34 52H60V31H38V10H60"/><circle cx="19" cy="10" r="3.2"/><circle cx="34" cy="52" r="3.2"/><circle cx="60" cy="10" r="3.2"/></svg><span class="wm">AYM <span>SOUIDAN</span></span></a>
-<ul class="mono"><li><a href="work.html" data-i18n="n1">My Work</a></li><li><a href="#skills" data-i18n="n2">Skills</a></li><li><a href="#about" data-i18n="n3">About</a></li><li><a href="#contact" data-i18n="n4">Contact</a></li></ul>
-<button id="lang" aria-label="Switch language">عربي</button>
-</nav>
 
-<!-- HERO (canvas network is drawn by hero-network.js) -->
-<header class="hero" id="top">
-<canvas id="net" aria-hidden="true"></canvas>
-<div class="mono" id="xy" aria-hidden="true">x:000 y:000</div>
-<div class="wrap">
-<div class="row mono"><span><i class="dot"></i><span data-i18n="st">SYSTEM ONLINE</span></span><span data-i18n="tg">COMPUTER ENGINEERING · 2026</span></div>
-<h1 data-i18n="h1">Engineering ideas into <em>digital experiences</em>.</h1>
-<div class="who"><b>Aym Souidan</b><span class="mono" data-i18n="role">Computer Engineer | Software Development | AI & Data</span></div>
-<p class="intro" data-i18n="intro"></p>
-<div class="btns"><a class="btn pri" href="#work" data-i18n="b1">Explore projects</a><a class="btn" id="cv" href="#" data-i18n="b2">Download CV</a></div>
-</div>
-<div class="scroll mono"><i></i><span data-i18n="sc">Scroll</span></div>
-</header>
+    <!-- NAVIGATION -->
 
-<main>
-<!-- PROJECTS — to add a project: copy one <article class="p">, change data-i, add p4t/p4c/p4s to translations.js -->
-<section id="work"><div class="wrap">
-<div class="sh"><h2 data-i18n="h2w">Selected projects</h2><span class="mono" data-i18n="hint">Select a project to preview</span></div>
-<!-- Add future fields (data-href, descriptions) to each article. Visuals are inline SVG. -->
-<article class="p rv" tabindex="0" role="button" data-i="1"><div class="meta"><span class="mono">01</span><h3 data-i18n="p1t">SignAloud</h3><span class="mono" data-i18n="p1c"></span><div class="tags mono"><span>Python</span><span>Machine Learning</span><span>Sensors</span></div></div>
-<div class="vz"><svg class="viz v1" viewBox="0 0 400 300" role="img" aria-label="Smart glove with sensor points feeding gesture recognition">
-<g class="l"><path d="M110 225V160q0-14 14-14h92q20 0 20 20v59z"/><path d="M122 146L108 74M148 146l-4-92M176 146V44M204 146l8-86M236 166l44-62"/></g>
-<g><circle class="s" style="--i:0" cx="108" cy="74" r="4"/><circle class="s" style="--i:1" cx="144" cy="54" r="4"/><circle class="s" style="--i:2" cx="176" cy="44" r="4"/><circle class="s" style="--i:3" cx="212" cy="60" r="4"/><circle class="s" style="--i:4" cx="280" cy="104" r="4"/>
-<circle class="s" style="--i:5" cx="115" cy="110" r="3"/><circle class="s" style="--i:6" cx="146" cy="100" r="3"/><circle class="s" style="--i:7" cx="176" cy="95" r="3"/><circle class="s" style="--i:8" cx="208" cy="103" r="3"/><circle class="s" style="--i:9" cx="170" cy="190" r="5"/></g>
-<path class="w" d="M30 268q12-26 24 0t24 0 24 0 24 0 24 0 24 0 24 0 24 0"/>
-<path class="k" d="M236 190L300 190"/><rect x="300" y="160" width="70" height="60" fill="none" stroke="var(--lilac)"/><text x="335" y="197" text-anchor="middle" style="font-size:26px;fill:var(--lilac)">A</text><text x="335" y="238" text-anchor="middle">gesture</text></svg></div></article>
+    <nav aria-label="Main">
 
-<article class="p rv" tabindex="0" role="button" data-i="2"><div class="meta"><span class="mono">02</span><h3 data-i18n="p2t"></h3><span class="mono" data-i18n="p2c"></span><div class="tags mono"><span>Python</span><span>Machine Learning</span><span>LightGBM</span></div></div>
-<div class="vz"><svg class="viz v2" viewBox="0 0 400 300" role="img" aria-label="Bar chart with dashed forecast line and data points">
-<path d="M30 260H380M30 260V30" stroke="var(--mute)" fill="none"/>
-<g><rect class="b" style="--i:0" x="45" y="190" width="24" height="70"/><rect class="b" style="--i:1" x="83" y="160" width="24" height="100"/><rect class="b" style="--i:2" x="121" y="175" width="24" height="85"/><rect class="b" style="--i:3" x="159" y="130" width="24" height="130"/><rect class="b" style="--i:4" x="197" y="145" width="24" height="115"/><rect class="b" style="--i:5" x="235" y="105" width="24" height="155"/>
-<rect class="f" x="273" y="85" width="24" height="175"/><rect class="f" x="311" y="70" width="24" height="190"/><rect class="f" x="349" y="55" width="24" height="205"/></g>
-<path class="t" d="M57 190L95 160 133 175 171 130 209 145 247 105 285 85 323 70 361 55"/>
-<g><circle cx="57" cy="190" r="3"/><circle cx="95" cy="160" r="3"/><circle cx="133" cy="175" r="3"/><circle cx="171" cy="130" r="3"/><circle cx="209" cy="145" r="3"/><circle cx="247" cy="105" r="3"/><circle cx="285" cy="85" r="3" fill="var(--lilac)"/><circle cx="323" cy="70" r="3" fill="var(--lilac)"/><circle cx="361" cy="55" r="3" fill="var(--lilac)"/></g>
-<text x="273" y="278">predicted</text></svg></div></article>
+        <a class="logo" href="#top" aria-label="Aym Souidan — home">
 
-<article class="p rv" tabindex="0" role="button" data-i="3"><div class="meta"><span class="mono">03</span><h3 data-i18n="p3t"></h3><span class="mono" data-i18n="p3c"></span><div class="tags mono"><span>Python</span><span>FastAPI</span><span>Gemini API</span></div></div>
-<div class="vz"><svg class="viz v3" viewBox="0 0 400 300" role="img" aria-label="Chat interface connected to backend system nodes">
-<rect class="bb" x="30" y="40" width="170" height="220"/>
-<rect class="bm" x="40" y="58" width="100" height="26"/><rect class="bb" x="80" y="100" width="110" height="34"/><path d="M90 112h90M90 123h60" stroke="var(--sky)"/><rect class="bm" x="40" y="150" width="120" height="26"/>
-<circle class="ty" style="--i:0" cx="48" cy="205" r="3"/><circle class="ty" style="--i:1" cx="60" cy="205" r="3"/><circle class="ty" style="--i:2" cx="72" cy="205" r="3"/>
-<path class="ln" d="M40 235h120"/>
-<g><line class="fl" x1="200" y1="150" x2="270" y2="150"/><line class="fl" x1="270" y1="150" x2="330" y2="80"/><line class="fl" x1="270" y1="150" x2="340" y2="150"/><line class="fl" x1="270" y1="150" x2="330" y2="225"/></g>
-<g><circle class="nd" cx="270" cy="150" r="16"/><circle class="nd" cx="330" cy="80" r="11"/><circle class="nd" cx="340" cy="150" r="11"/><circle class="nd" cx="330" cy="225" r="11"/></g>
-<text x="270" y="154" text-anchor="middle">AI</text><text x="330" y="84" text-anchor="middle">API</text><text x="340" y="154" text-anchor="middle">DB</text><text x="330" y="229" text-anchor="middle">…</text></svg></div></article>
-</div></section>
+            <svg class="mk" viewBox="0 0 64 58" aria-hidden="true">
+                <path class="ml" d="M4 52L19 10 34 52H60V31H38V10H60"/>
+                <circle cx="19" cy="10" r="3.2"/>
+                <circle cx="34" cy="52" r="3.2"/>
+                <circle cx="60" cy="10" r="3.2"/>
+            </svg>
 
-<!-- SKILLS (built by skills.js from config.js) -->
-<section id="skills"><div class="wrap">
-<div class="sh"><h2 data-i18n="h2s">Technical constellation</h2><span class="mono" data-i18n="skh"></span></div>
-<div class="sk"><svg id="map" role="group" aria-label="Skills map"></svg><div id="pn" aria-live="polite"></div></div>
-</div></section>
+            <span class="wm">
+                AYM <span>SOUIDAN</span>
+            </span>
 
-<!-- ABOUT (texts in translations.js) -->
-<section id="about"><div class="wrap ab">
-<h2 class="rv" data-i18n="h2a"></h2>
-<div class="tx rv"><p data-i18n="a1"></p><p data-i18n="a2"></p></div>
-<div class="facts mono rv"><div><span class="mono" data-i18n="k1"></span><span data-i18n="v1"></span></div><div><span class="mono" data-i18n="k2"></span><span data-i18n="v2"></span></div><div><span class="mono" data-i18n="k3"></span><span data-i18n="v3"></span></div></div>
-</div></section>
+        </a>
 
-<!-- CONTACT (links come from config.js) -->
-<section id="contact" class="ct"><div class="wrap">
-<p class="mono"><i class="dot"></i><span data-i18n="cx">CONNECTION OPEN</span></p>
-<h2 class="rv" data-i18n="h2c"></h2>
-<p class="intro" data-i18n="cp"></p>
-<a class="mail" id="mail" href="#">you@example.com</a>
-<div class="links"><a class="btn" id="li" href="#">LinkedIn</a><a class="btn" id="gh" href="#">GitHub</a><a class="btn" id="cv2" href="#" data-i18n="b2">Download CV</a></div>
-</div></section>
-</main>
-<!-- FOOTER -->
-<footer><div class="wrap mono"><a class="logo" href="#top" aria-label="Aym Souidan — home"><svg class="mk" viewBox="0 0 64 58" aria-hidden="true"><path class="ml" d="M4 52L19 10 34 52H60V31H38V10H60"/><circle cx="19" cy="10" r="3.2"/><circle cx="34" cy="52" r="3.2"/><circle cx="60" cy="10" r="3.2"/></svg><span class="wm">AYM <span>SOUIDAN</span></span></a><span>© 2026</span><span>Al Khobar, SA</span></div></footer>
+        <ul class="mono">
+            <li>
+                <a href="work.html" data-i18n="n1">My Work</a>
+            </li>
 
-<!-- PROJECT PREVIEW OVERLAY -->
-<dialog id="ov" aria-labelledby="ot"><div class="hd"><div><h3 id="ot"></h3><span class="mono" id="oc"></span></div><button id="x" data-i18n="cl">Close</button></div><div class="vz" id="os"></div><p class="mono" style="margin-top:1rem" data-i18n="soon">Details coming soon</p></dialog>
+            <li>
+                <a href="#skills" data-i18n="n2">Skills</a>
+            </li>
 
-<script src="config.js" defer></script>
-<script src="translations.js" defer></script>
-<script src="main.js" defer></script>
-<script src="hero-network.js" defer></script>
-<script src="skills.js" defer></script>
-<script src="projects.js" defer></script>
-<script src="init.js" defer></script>
+            <li>
+                <a href="#about" data-i18n="n3">About</a>
+            </li>
+
+            <li>
+                <a href="#contact" data-i18n="n4">Contact</a>
+            </li>
+        </ul>
+
+        <button id="lang" aria-label="Switch language">عربي</button>
+
+    </nav>
+
+
+    <!-- HERO (canvas network is drawn by hero-network.js) -->
+
+    <header class="hero" id="top">
+
+        <canvas id="net" aria-hidden="true"></canvas>
+
+        <div class="mono" id="xy" aria-hidden="true">
+            x:000 y:000
+        </div>
+
+        <div class="wrap">
+
+            <div class="row mono">
+
+                <span>
+                    <i class="dot"></i>
+                    <span data-i18n="st">SYSTEM ONLINE</span>
+                </span>
+
+                <span data-i18n="tg">
+                    COMPUTER ENGINEERING · 2026
+                </span>
+
+            </div>
+
+            <h1 data-i18n="h1">
+                Engineering ideas into <em>digital experiences</em>.
+            </h1>
+
+            <div class="who">
+                <b>Aym Souidan</b>
+
+                <span class="mono" data-i18n="role">
+                    Computer Engineer | Software Development | AI & Data
+                </span>
+            </div>
+
+            <p class="intro" data-i18n="intro"></p>
+
+            <div class="btns">
+
+                <a class="btn pri" href="#work" data-i18n="b1">
+                    Explore projects
+                </a>
+
+                <a class="btn" id="cv" href="#" data-i18n="b2">
+                    Download CV
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="scroll mono">
+            <i></i>
+            <span data-i18n="sc">Scroll</span>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- PROJECTS — to add a project: copy one <article class="p">, change data-i, add p4t/p4c/p4s to translations.js -->
+
+        <section id="work">
+
+            <div class="wrap">
+
+                <div class="sh">
+                    <h2 data-i18n="h2w">Selected projects</h2>
+                    <span class="mono" data-i18n="hint">
+                        Select a project to preview
+                    </span>
+                </div>
+
+
+                <!-- Add future fields (data-href, descriptions) to each article. Visuals are inline SVG. -->
+
+
+                <!-- PROJECT 01: SIGNALOUD -->
+
+                <article class="p rv" tabindex="0" role="button" data-i="1">
+
+                    <div class="meta">
+
+                        <span class="mono">01</span>
+
+                        <h3 data-i18n="p1t">SignAloud</h3>
+
+                        <span class="mono" data-i18n="p1c"></span>
+
+                        <div class="tags mono">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>Sensors</span>
+                        </div>
+
+                    </div>
+
+                    <div class="vz">
+
+                        <svg
+                            class="viz v1"
+                            viewBox="0 0 400 300"
+                            role="img"
+                            aria-label="Smart glove with sensor points feeding gesture recognition"
+                        >
+
+                            <g class="l">
+                                <path d="M110 225V160q0-14 14-14h92q20 0 20 20v59z"/>
+                                <path d="M122 146L108 74M148 146l-4-92M176 146V44M204 146l8-86M236 166l44-62"/>
+                            </g>
+
+                            <g>
+                                <circle class="s" style="--i:0" cx="108" cy="74" r="4"/>
+                                <circle class="s" style="--i:1" cx="144" cy="54" r="4"/>
+                                <circle class="s" style="--i:2" cx="176" cy="44" r="4"/>
+                                <circle class="s" style="--i:3" cx="212" cy="60" r="4"/>
+                                <circle class="s" style="--i:4" cx="280" cy="104" r="4"/>
+
+                                <circle class="s" style="--i:5" cx="115" cy="110" r="3"/>
+                                <circle class="s" style="--i:6" cx="146" cy="100" r="3"/>
+                                <circle class="s" style="--i:7" cx="176" cy="95" r="3"/>
+                                <circle class="s" style="--i:8" cx="208" cy="103" r="3"/>
+                                <circle class="s" style="--i:9" cx="170" cy="190" r="5"/>
+                            </g>
+
+                            <path class="w" d="M30 268q12-26 24 0t24 0 24 0 24 0 24 0 24 0 24 0 24 0"/>
+
+                            <path class="k" d="M236 190L300 190"/>
+
+                            <rect
+                                x="300"
+                                y="160"
+                                width="70"
+                                height="60"
+                                fill="none"
+                                stroke="var(--lilac)"
+                            />
+
+                            <text
+                                x="335"
+                                y="197"
+                                text-anchor="middle"
+                                style="font-size:26px;fill:var(--lilac)"
+                            >A</text>
+
+                            <text x="335" y="238" text-anchor="middle">
+                                gesture
+                            </text>
+
+                        </svg>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 02: RETAIL ANALYSIS -->
+
+                <article class="p rv" tabindex="0" role="button" data-i="2">
+
+                    <div class="meta">
+
+                        <span class="mono">02</span>
+
+                        <h3 data-i18n="p2t"></h3>
+
+                        <span class="mono" data-i18n="p2c"></span>
+
+                        <div class="tags mono">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>LightGBM</span>
+                        </div>
+
+                    </div>
+
+                    <div class="vz">
+
+                        <svg
+                            class="viz v2"
+                            viewBox="0 0 400 300"
+                            role="img"
+                            aria-label="Bar chart with dashed forecast line and data points"
+                        >
+
+                            <path d="M30 260H380M30 260V30" stroke="var(--mute)" fill="none"/>
+
+                            <g>
+                                <rect class="b" style="--i:0" x="45" y="190" width="24" height="70"/>
+                                <rect class="b" style="--i:1" x="83" y="160" width="24" height="100"/>
+                                <rect class="b" style="--i:2" x="121" y="175" width="24" height="85"/>
+                                <rect class="b" style="--i:3" x="159" y="130" width="24" height="130"/>
+                                <rect class="b" style="--i:4" x="197" y="145" width="24" height="115"/>
+                                <rect class="b" style="--i:5" x="235" y="105" width="24" height="155"/>
+
+                                <rect class="f" x="273" y="85" width="24" height="175"/>
+                                <rect class="f" x="311" y="70" width="24" height="190"/>
+                                <rect class="f" x="349" y="55" width="24" height="205"/>
+                            </g>
+
+                            <path class="t" d="M57 190L95 160 133 175 171 130 209 145 247 105 285 85 323 70 361 55"/>
+
+                            <g>
+                                <circle cx="57" cy="190" r="3"/>
+                                <circle cx="95" cy="160" r="3"/>
+                                <circle cx="133" cy="175" r="3"/>
+                                <circle cx="171" cy="130" r="3"/>
+                                <circle cx="209" cy="145" r="3"/>
+                                <circle cx="247" cy="105" r="3"/>
+                                <circle cx="285" cy="85" r="3" fill="var(--lilac)"/>
+                                <circle cx="323" cy="70" r="3" fill="var(--lilac)"/>
+                                <circle cx="361" cy="55" r="3" fill="var(--lilac)"/>
+                            </g>
+
+                            <text x="273" y="278">
+                                predicted
+                            </text>
+
+                        </svg>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 03: AI CUSTOMER SERVICE ASSISTANT -->
+
+                <article class="p rv" tabindex="0" role="button" data-i="3">
+
+                    <div class="meta">
+
+                        <span class="mono">03</span>
+
+                        <h3 data-i18n="p3t"></h3>
+
+                        <span class="mono" data-i18n="p3c"></span>
+
+                        <div class="tags mono">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>Gemini API</span>
+                        </div>
+
+                    </div>
+
+                    <div class="vz">
+
+                        <svg
+                            class="viz v3"
+                            viewBox="0 0 400 300"
+                            role="img"
+                            aria-label="Chat interface connected to backend system nodes"
+                        >
+
+                            <rect class="bb" x="30" y="40" width="170" height="220"/>
+
+                            <rect class="bm" x="40" y="58" width="100" height="26"/>
+
+                            <rect class="bb" x="80" y="100" width="110" height="34"/>
+
+                            <path d="M90 112h90M90 123h60" stroke="var(--sky)"/>
+
+                            <rect class="bm" x="40" y="150" width="120" height="26"/>
+
+                            <circle class="ty" style="--i:0" cx="48" cy="205" r="3"/>
+                            <circle class="ty" style="--i:1" cx="60" cy="205" r="3"/>
+                            <circle class="ty" style="--i:2" cx="72" cy="205" r="3"/>
+
+                            <path class="ln" d="M40 235h120"/>
+
+                            <g>
+                                <line class="fl" x1="200" y1="150" x2="270" y2="150"/>
+                                <line class="fl" x1="270" y1="150" x2="330" y2="80"/>
+                                <line class="fl" x1="270" y1="150" x2="340" y2="150"/>
+                                <line class="fl" x1="270" y1="150" x2="330" y2="225"/>
+                            </g>
+
+                            <g>
+                                <circle class="nd" cx="270" cy="150" r="16"/>
+                                <circle class="nd" cx="330" cy="80" r="11"/>
+                                <circle class="nd" cx="340" cy="150" r="11"/>
+                                <circle class="nd" cx="330" cy="225" r="11"/>
+                            </g>
+
+                            <text x="270" y="154" text-anchor="middle">AI</text>
+                            <text x="330" y="84" text-anchor="middle">API</text>
+                            <text x="340" y="154" text-anchor="middle">DB</text>
+                            <text x="330" y="229" text-anchor="middle">…</text>
+
+                        </svg>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS (built by skills.js from config.js) -->
+
+        <section id="skills">
+
+            <div class="wrap">
+
+                <div class="sh">
+                    <h2 data-i18n="h2s">Technical constellation</h2>
+                    <span class="mono" data-i18n="skh"></span>
+                </div>
+
+                <div class="sk">
+                    <svg id="map" role="group" aria-label="Skills map"></svg>
+                    <div id="pn" aria-live="polite"></div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT (texts in translations.js) -->
+
+        <section id="about">
+
+            <div class="wrap ab">
+
+                <h2 class="rv" data-i18n="h2a"></h2>
+
+                <div class="tx rv">
+                    <p data-i18n="a1"></p>
+                    <p data-i18n="a2"></p>
+                </div>
+
+                <div class="facts mono rv">
+
+                    <div>
+                        <span class="mono" data-i18n="k1"></span>
+                        <span data-i18n="v1"></span>
+                    </div>
+
+                    <div>
+                        <span class="mono" data-i18n="k2"></span>
+                        <span data-i18n="v2"></span>
+                    </div>
+
+                    <div>
+                        <span class="mono" data-i18n="k3"></span>
+                        <span data-i18n="v3"></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT (links come from config.js) -->
+
+        <section id="contact" class="ct">
+
+            <div class="wrap">
+
+                <p class="mono">
+                    <i class="dot"></i>
+                    <span data-i18n="cx">CONNECTION OPEN</span>
+                </p>
+
+                <h2 class="rv" data-i18n="h2c"></h2>
+
+                <p class="intro" data-i18n="cp"></p>
+
+                <a class="mail" id="mail" href="#">
+                    you@example.com
+                </a>
+
+                <div class="links">
+
+                    <a class="btn" id="li" href="#">LinkedIn</a>
+
+                    <a class="btn" id="gh" href="#">GitHub</a>
+
+                    <a class="btn" id="cv2" href="#" data-i18n="b2">
+                        Download CV
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="wrap mono">
+
+            <a class="logo" href="#top" aria-label="Aym Souidan — home">
+
+                <svg class="mk" viewBox="0 0 64 58" aria-hidden="true">
+                    <path class="ml" d="M4 52L19 10 34 52H60V31H38V10H60"/>
+                    <circle cx="19" cy="10" r="3.2"/>
+                    <circle cx="34" cy="52" r="3.2"/>
+                    <circle cx="60" cy="10" r="3.2"/>
+                </svg>
+
+                <span class="wm">
+                    AYM <span>SOUIDAN</span>
+                </span>
+
+            </a>
+
+            <span>© 2026</span>
+            <span>Al Khobar, SA</span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- PROJECT PREVIEW OVERLAY -->
+
+    <dialog id="ov" aria-labelledby="ot">
+
+        <div class="hd">
+
+            <div>
+                <h3 id="ot"></h3>
+                <span class="mono" id="oc"></span>
+            </div>
+
+            <button id="x" data-i18n="cl">Close</button>
+
+        </div>
+
+        <div class="vz" id="os"></div>
+
+        <p class="mono" style="margin-top:1rem" data-i18n="soon">
+            Details coming soon
+        </p>
+
+    </dialog>
+
+
+    <!-- JAVASCRIPT FILES -->
+
+    <script src="config.js" defer></script>
+    <script src="translations.js" defer></script>
+    <script src="main.js" defer></script>
+    <script src="hero-network.js" defer></script>
+    <script src="skills.js" defer></script>
+    <script src="projects.js" defer></script>
+    <script src="init.js" defer></script>
+
 </body>
+
 </html>
