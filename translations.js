@@ -10,7 +10,7 @@ const T = {
         // Hero
         st: 'SYSTEM ONLINE',
         tg: 'COMPUTER ENGINEERING · 2026',
-        h1: 'Engineering ideas into <em>digital experiences</em>.',
+        h1: 'Engineering ideas into <em>intelligent systems</em>.',
         role: 'Computer Engineer | Software Development | AI & Data',
         intro: 'Computer engineer in Al Khobar, building at the intersection of software, machine learning, and data.',
         b1: 'Explore projects',
@@ -22,7 +22,7 @@ const T = {
         hint: 'Select a project to preview',
         p1t: 'SignAloud',
         p1c: 'Graduation Project · Machine Learning · Hardware',
-        p2t: 'Analysis and Prediction of Retail Trends Using Machine Learning',
+        p2t: 'Online Retail Data Analysis & Machine Learning',
         p2c: 'Academic Project · Machine Learning · Data Analysis',
         p3t: 'AI Customer Service Assistant',
         p3c: 'AI · Backend Development · Prototype',
@@ -44,8 +44,8 @@ const T = {
 
         // About
         h2a: 'Software, hardware, and the data in between.',
-        a1: 'I’m a Computer Engineering graduate from İstinye University (June 2026), drawn to software development, artificial intelligence, and data analysis.',
-        a2: 'My projects combine software, hardware, and machine learning — from a smart glove with gesture recognition to retail prediction and conversational AI prototypes. I favor practical solutions, and I keep learning by building.',
+        a1: 'I’m a Computer Engineering graduate from İstinye University, where I graduated with honors in June 2026. My interests lie in software development, artificial intelligence, and data analysis.',
+        a2: 'My projects bring together software, hardware, and machine learning — from real-time gesture recognition to retail data analysis and AI-powered service prototypes. I enjoy turning technical ideas into practical, working solutions and continuously expanding my skills through building.',
         k1: 'Education',
         v1: 'Computer Engineering · İstinye University',
         k2: 'Location',
@@ -73,7 +73,7 @@ const T = {
         // Hero
         st: 'النظام يعمل',
         tg: 'هندسة الحاسوب · 2026',
-        h1: 'نحوّل الأفكار الهندسية إلى <em>تجارب رقمية</em>.',
+        h1: 'نحوّل الأفكار الهندسية إلى <em>أنظمة ذكية/em>.',
         role: 'مهندسة حاسوب | تطوير البرمجيات | الذكاء الاصطناعي والبيانات',
         intro: 'مهندسة حاسوب من الخبر، أبني حلولًا تجمع بين البرمجيات والتعلّم الآلي والبيانات.',
         b1: 'استكشف المشاريع',
