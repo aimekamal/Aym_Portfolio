@@ -1,5 +1,5 @@
 
-const translations = {
+const T = {
     en: {
         // Navigation
         n1: 'My Work',
